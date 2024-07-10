@@ -4,8 +4,13 @@ allprojects {
         mavenCentral()
     }
 }
-
 rootProject.buildDir = "../build"
+
+dependencies {
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.2.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.22'
+}
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
